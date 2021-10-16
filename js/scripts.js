@@ -12,3 +12,24 @@ $(function() {
         }
     });
 });
+$('#reserveButton').on('click', function() {
+    $('#reserveModal').modal('show');
+});
+
+$('#loginButton').on('click', function() {
+    $('#loginModal').modal('show');
+});
+
+/* 
+
+I was using the click method below but after some research found that the best practice is now the '.on' method I am using above. I have included both for you to show that I understand the concept. 
+
+$('#reserveButton').click(function() {
+    $('#reserveModal').modal('show');
+});
+
+$('#loginButton').click(function() {
+    $('#loginModal').modal('show');
+});
+
+*/
